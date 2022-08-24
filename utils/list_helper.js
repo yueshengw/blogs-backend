@@ -1,4 +1,4 @@
-const dummy = (blogs) => {
+const dummy = () => {
     return 1
 }
 
@@ -17,7 +17,7 @@ const favoriteBlog = (blogs) => {
     else {
         return null
     }
-    
+
    return favoriteBlog && {
     title: blogs[favoriteBlogIndex].title,
     author: blogs[favoriteBlogIndex].author,
@@ -47,7 +47,7 @@ const mostBlog = (blogs) => {
 
 const mostLikes = (blogs) => {
     let authorListUO = []
-    let authorList = []
+    // let authorList = []
     let tempList = []
     if (blogs && blogs.length > 0) {
         authorListUO = blogs.map(blog => blog.author)

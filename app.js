@@ -18,6 +18,7 @@ mongoose
         console.log('failed to connect to mongoose')
     })
 
+app.use(http)
 app.use(cors())
 app.use(express.json())
 app.use(middleware.requestLogger)
